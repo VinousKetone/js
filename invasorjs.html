@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Insira:
+    <br>Inicio: <input type="number" name="ini" id="txti">
+    <br>Passo: <input type="number" name="ppp" id="txtp">
+    <br>Fim: <input type="number" name="fff" id="txtf">
+    <input type="button" value="n" onclick="clicar()">
+    <div id="res">GG</div>
+    <script>
+        var ini = document.getElementById('txti')
+        var pas = document.getElementById('txtp')
+        var fim = document.getElementById('txtf')
+        var res = document.getElementById('res')
+        function clicar() {
+            if(ini.value ==0 || pas.value ==0 || fim.value ==0) {
+alert('something went wrong')
+            }else{
+                let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(pas.value)
+
+        for(let c= i; c<=f; c+=p) { 
+            res.innerHTML= `${c} `
+        }
+            }
+        }
+    </script>
+</body>
+</html>

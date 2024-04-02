@@ -1,0 +1,27 @@
+@charset "UFT-8";
+
+* {
+    font-family: normal 20pt Arial;
+
+}
+h1{
+    color: red;
+}
+h2 {
+    color: royalblue;
+}
+body {
+           
+    background-image: linear-gradient(to right , #BF567D 1%, #A432A6,#9F18D9,#F29727,#D9704A);
+}
+main{
+    background-color: aqua;
+    border-radius: 10px;
+    width: 600px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px red;
+    margin: auto;
+}
+p{
+    text-align: justify;
+}
